@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -37,7 +38,16 @@ export default function MainNavbar() {
         >
             <nav className="container-custom flex items-center justify-between py-4 lg:py-6">
                 {/* Logo */}
-                <Link href="/" className="flex items-center space-x-2">
+                <Link href="/" className="flex items-center space-x-3">
+                    <div className="relative w-12 h-12 rounded-lg overflow-hidden">
+                        <Image
+                            src="/logo.jpg"
+                            alt="Deccan Veda Reality Logo"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
                     <div className="flex flex-col">
                         <span
                             className={cn(

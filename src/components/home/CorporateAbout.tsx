@@ -16,15 +16,13 @@ export default function CorporateAbout() {
                     {/* Image Side */}
                     <div className="relative">
                         <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                            {/* Placeholder for user's image */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-corporate-blue to-project-gold flex items-center justify-center">
-                                <div className="text-center text-white p-8">
-                                    <Building2 className="h-24 w-24 mx-auto mb-4 opacity-50" />
-                                    <p className="text-sm opacity-70">
-                                        Replace with company/office image
-                                    </p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/images/company.jpg"
+                                alt="Deccan Veda Reality Office"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
                         </div>
 
                         {/* Floating Stats */}
