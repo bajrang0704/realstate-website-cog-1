@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-outfit: 'Outfit', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-bg-lighter text-corporate-blue antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+
+  /* Button Styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-project-gold hover:bg-project-gold-dark text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border-2 border-project-gold text-project-gold hover:bg-project-gold hover:text-white font-semibold rounded-lg transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-corporate-blue font-semibold rounded-lg transition-all duration-300;
+  }
+
+  /* Container Styles */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section Styles */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-project-gold to-project-gold-light bg-clip-text text-transparent;
+  }
+
+  /* Card Styles */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+
+  /* Glassmorphism Effect */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
