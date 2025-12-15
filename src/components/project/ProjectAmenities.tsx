@@ -33,33 +33,33 @@ export default function ProjectAmenities() {
         <section id="amenities" className="section-padding bg-bg-light">
             <div className="container-custom">
                 {/* Section Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-corporate-blue mb-6">
+                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-corporate-blue mb-4 md:mb-6">
                         World-Class <span className="text-gradient">Amenities</span>
                     </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
+                    <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         Experience luxury living with premium amenities designed for your
                         comfort and convenience.
                     </p>
                 </div>
 
                 {/* Amenities Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
                     {amenities.map((amenity, index) => {
                         const Icon = amenity.icon;
                         return (
                             <div
                                 key={amenity.name}
-                                className="group bg-white rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 border border-gray-200 card-hover"
+                                className="group bg-white rounded-xl p-3 md:p-6 text-center hover:shadow-xl transition-all duration-300 border border-gray-200 card-hover"
                                 style={{ animationDelay: `${index * 50}ms` }}
                             >
-                                <div className="h-16 w-16 mx-auto mb-4 rounded-full bg-project-gold/10 group-hover:bg-project-gold/20 flex items-center justify-center transition-colors">
-                                    <Icon className="h-8 w-8 text-project-gold" />
+                                <div className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-3 md:mb-4 rounded-full bg-project-gold/10 group-hover:bg-project-gold/20 flex items-center justify-center transition-colors">
+                                    <Icon className="h-6 w-6 md:h-8 md:w-8 text-project-gold" />
                                 </div>
-                                <h3 className="font-semibold text-corporate-blue mb-1">
+                                <h3 className="font-semibold text-sm md:text-base text-corporate-blue mb-1">
                                     {amenity.name}
                                 </h3>
-                                <span className="text-xs text-gray-500">{amenity.category}</span>
+                                <span className="text-[10px] md:text-xs text-gray-500">{amenity.category}</span>
                             </div>
                         );
                     })}

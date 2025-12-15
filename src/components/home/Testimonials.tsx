@@ -12,7 +12,7 @@ const testimonials = [
         location: "Heritage County",
         rating: 5,
         content:
-            "Deccan Veda Reality exceeded all expectations. The transparency in documentation and the quality of amenities are truly outstanding. Best investment decision I've made!",
+            "Deccan Veda Realty exceeded all expectations. The transparency in documentation and the quality of amenities are truly outstanding. Best investment decision I've made!",
     },
     {
         id: 2,

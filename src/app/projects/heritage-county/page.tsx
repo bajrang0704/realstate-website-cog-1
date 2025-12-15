@@ -7,7 +7,7 @@ import PriceCalculator from "@/components/project/PriceCalculator";
 import ProjectGallery from "@/components/project/ProjectGallery";
 
 export const metadata: Metadata = {
-    title: "Heritage County - Premium Plotted Development | Deccan Veda Reality",
+    title: "Heritage County - Premium Plotted Development | Deccan Veda Realty",
     description:
         "Discover Heritage County - a premium plotted community in Shadnagar with world-class amenities, clear titles, and RERA approval.",
 };

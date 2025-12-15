@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
                         Why Choose{" "}
-                        <span className="text-project-gold">Deccan Veda Reality</span>
+                        <span className="text-project-gold">Deccan Veda Realty</span>
                     </h2>
                     <p className="text-lg text-white/80 leading-relaxed">
                         We don't just sell plots; we build relationships and create

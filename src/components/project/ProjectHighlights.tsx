@@ -43,27 +43,27 @@ export default function ProjectHighlights() {
         <section id="overview" className="section-padding bg-white">
             <div className="container-custom">
                 {/* Key Highlights */}
-                <div className="mb-20">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-corporate-blue mb-12 text-center">
+                <div className="mb-10 md:mb-20">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-corporate-blue mb-8 md:mb-12 text-center">
                         Project <span className="text-gradient">Highlights</span>
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                         {highlights.map((item, index) => {
                             const Icon = item.icon;
                             return (
                                 <div
                                     key={item.title}
-                                    className="text-center p-6 rounded-xl bg-gradient-to-br from-bg-light to-white border border-gray-200 hover:shadow-lg transition-all duration-300"
+                                    className="text-center p-4 md:p-6 rounded-xl bg-gradient-to-br from-bg-light to-white border border-gray-200 hover:shadow-lg transition-all duration-300"
                                     style={{ animationDelay: `${index * 100}ms` }}
                                 >
-                                    <div className="h-14 w-14 mx-auto mb-4 rounded-full bg-project-gold/10 flex items-center justify-center">
-                                        <Icon className="h-7 w-7 text-project-gold" />
+                                    <div className="h-10 w-10 md:h-14 md:w-14 mx-auto mb-3 md:mb-4 rounded-full bg-project-gold/10 flex items-center justify-center">
+                                        <Icon className="h-5 w-5 md:h-7 md:w-7 text-project-gold" />
                                     </div>
-                                    <h3 className="text-lg font-display font-semibold text-corporate-blue mb-2">
+                                    <h3 className="text-base md:text-lg font-display font-semibold text-corporate-blue mb-1 md:mb-2">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm text-gray-600">{item.description}</p>
+                                    <p className="text-xs md:text-sm text-gray-600">{item.description}</p>
                                 </div>
                             );
                         })}
@@ -87,10 +87,10 @@ export default function ProjectHighlights() {
                                     <div className="flex items-center gap-3">
                                         <div
                                             className={`h-3 w-3 rounded-full ${item.status === "completed"
-                                                    ? "bg-green-500"
-                                                    : item.status === "ongoing"
-                                                        ? "bg-project-gold animate-pulse"
-                                                        : "bg-gray-300"
+                                                ? "bg-green-500"
+                                                : item.status === "ongoing"
+                                                    ? "bg-project-gold animate-pulse"
+                                                    : "bg-gray-300"
                                                 }`}
                                         />
                                         <span className="font-semibold text-corporate-blue">
@@ -106,10 +106,10 @@ export default function ProjectHighlights() {
                                 <div className="ml-6 h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div
                                         className={`h-full transition-all duration-1000 ${item.status === "completed"
-                                                ? "bg-green-500"
-                                                : item.status === "ongoing"
-                                                    ? "bg-project-gold"
-                                                    : "bg-gray-300"
+                                            ? "bg-green-500"
+                                            : item.status === "ongoing"
+                                                ? "bg-project-gold"
+                                                : "bg-gray-300"
                                             }`}
                                         style={{ width: `${item.progress}%` }}
                                     />

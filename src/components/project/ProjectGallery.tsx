@@ -34,21 +34,21 @@ export default function ProjectGallery() {
         <section id="gallery" className="section-padding bg-bg-light">
             <div className="container-custom">
                 {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-corporate-blue mb-6">
+                <div className="text-center mb-8 md:mb-12">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-corporate-blue mb-4 md:mb-6">
                         Project <span className="text-gradient">Gallery</span>
                     </h2>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-base md:text-lg text-gray-600">
                         Explore Heritage County through images and videos
                     </p>
                 </div>
 
                 {/* Filter Buttons */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
                     <button
                         onClick={() => setActiveFilter("all")}
                         className={cn(
-                            "px-6 py-2.5 rounded-lg font-semibold transition-all duration-300",
+                            "px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-semibold text-sm md:text-base transition-all duration-300",
                             activeFilter === "all"
                                 ? "bg-project-gold text-white shadow-lg"
                                 : "bg-white text-gray-600 hover:bg-gray-100"
@@ -59,7 +59,7 @@ export default function ProjectGallery() {
                     <button
                         onClick={() => setActiveFilter("images")}
                         className={cn(
-                            "px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2",
+                            "px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 flex items-center gap-2",
                             activeFilter === "images"
                                 ? "bg-project-gold text-white shadow-lg"
                                 : "bg-white text-gray-600 hover:bg-gray-100"
@@ -71,7 +71,7 @@ export default function ProjectGallery() {
                     <button
                         onClick={() => setActiveFilter("videos")}
                         className={cn(
-                            "px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2",
+                            "px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 flex items-center gap-2",
                             activeFilter === "videos"
                                 ? "bg-project-gold text-white shadow-lg"
                                 : "bg-white text-gray-600 hover:bg-gray-100"
@@ -83,7 +83,7 @@ export default function ProjectGallery() {
                     <button
                         onClick={() => setActiveFilter("360")}
                         className={cn(
-                            "px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2",
+                            "px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-semibold text-sm md:text-base transition-all duration-300 flex items-center gap-2",
                             activeFilter === "360"
                                 ? "bg-project-gold text-white shadow-lg"
                                 : "bg-white text-gray-600 hover:bg-gray-100"

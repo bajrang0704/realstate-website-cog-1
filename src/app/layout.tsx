@@ -15,25 +15,20 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    title: "Deccan Veda Reality - Premium Real Estate in Hyderabad",
+    title: "Deccan Veda Realty - Premium Real Estate in Hyderabad",
     description:
-        "Discover premium plotted developments with Deccan Veda Reality. Heritage County offers world-class amenities and clear titles in prime locations.",
-    keywords: [
-        "real estate",
-        "hyderabad plots",
-        "plotted development",
-        "deccan veda",
-        "heritage county",
-        "premium plots",
-    ],
-    authors: [{ name: "Deccan Veda Reality" }],
+        "Discover premium plotted developments with Deccan Veda Realty. Heritage County offers world-class amenities and clear titles in prime locations.",
+    keywords:
+        "Deccan Veda Realty, Real Estate Hyderabad, Open Plots, Shadnagar, Heritage County, Premium Plots",
+    authors: [{ name: "Deccan Veda Realty" }],
     viewport: "width=device-width, initial-scale=1",
     themeColor: "#0F172A",
     openGraph: {
         type: "website",
         locale: "en_IN",
-        siteName: "Deccan Veda Reality",
-        title: "Deccan Veda Reality - Premium Real Estate",
+        url: "https://deccanvedarealty.com",
+        siteName: "Deccan Veda Realty",
+        title: "Deccan Veda Realty - Premium Real Estate",
         description: "Premium plotted developments in Hyderabad",
     },
 };
@@ -44,7 +39,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+        <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />

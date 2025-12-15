@@ -18,7 +18,7 @@ export default function CorporateAbout() {
                         <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/images/company.jpg"
-                                alt="Deccan Veda Reality Office"
+                                alt="Deccan Veda Realty Office"
                                 fill
                                 className="object-cover"
                                 priority
@@ -26,12 +26,12 @@ export default function CorporateAbout() {
                         </div>
 
                         {/* Floating Stats */}
-                        <div className="absolute -bottom-8 -right-8 bg-white rounded-xl shadow-2xl p-6 max-w-xs">
-                            <p className="text-sm text-gray-600 mb-2">Trusted by</p>
-                            <p className="text-4xl font-display font-bold text-project-gold">
+                        <div className="absolute -bottom-6 right-0 md:-bottom-8 md:-right-8 bg-white rounded-xl shadow-2xl p-2 md:p-6 max-w-[130px] md:max-w-xs">
+                            <p className="text-[9px] md:text-sm text-gray-600 mb-0.5 md:mb-2">Trusted by</p>
+                            <p className="text-lg md:text-4xl font-display font-bold text-project-gold">
                                 500+
                             </p>
-                            <p className="text-sm text-corporate-blue font-semibold">
+                            <p className="text-[9px] md:text-sm text-corporate-blue font-semibold">
                                 Satisfied Customers
                             </p>
                         </div>
@@ -46,7 +46,7 @@ export default function CorporateAbout() {
                             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                                 <p>
                                     <strong className="text-corporate-blue">
-                                        Deccan Veda Reality
+                                        Deccan Veda Realty
                                     </strong>{" "}
                                     is a trusted name in premium plotted developments across
                                     Hyderabad. With over a decade of experience, we specialize in

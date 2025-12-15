@@ -68,8 +68,7 @@ export default function ProjectLayout({
             {/* Project Sub-Navigation - Only visible when scrolled past hero */}
             {isSticky && (
                 <nav
-                    className="fixed left-0 right-0 z-40 bg-white border-b border-gray-200 shadow-md transition-all duration-300"
-                    style={{ top: "96px" }}
+                    className="fixed left-0 right-0 z-40 bg-white border-b border-gray-200 shadow-md transition-all duration-300 top-[80px] lg:top-[96px]"
                 >
                     <div className="container-custom">
                         <div className="flex items-center justify-between py-4 overflow-x-auto">
@@ -100,7 +99,7 @@ export default function ProjectLayout({
                 </nav>
             )}
 
-            <main className={cn(isSticky && "mt-[156px]")}>{children}</main>
+            <main className={cn(isSticky && "mt-[140px] lg:mt-[156px]")}>{children}</main>
 
             <MainFooter />
         </>

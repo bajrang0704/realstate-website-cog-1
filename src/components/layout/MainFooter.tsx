@@ -162,7 +162,7 @@ export default function MainFooter() {
 
                         {/* Copyright */}
                         <p className="text-sm text-gray-400">
-                            © {new Date().getFullYear()} Deccan Veda Reality. All rights
+                            © {new Date().getFullYear()} Deccan Veda Realty. All rights
                             reserved.
                         </p>
                     </div>

@@ -42,7 +42,7 @@ export default function MainNavbar() {
                     <div className="relative w-12 h-12 rounded-lg overflow-hidden">
                         <Image
                             src="/logo.jpg"
-                            alt="Deccan Veda Reality Logo"
+                            alt="Deccan Veda Realty Logo"
                             fill
                             className="object-cover"
                             priority
@@ -63,7 +63,7 @@ export default function MainNavbar() {
                                 scrolled ? "text-project-gold" : "text-project-gold-light"
                             )}
                         >
-                            Reality
+                            Realty
                         </span>
                     </div>
                 </Link>
