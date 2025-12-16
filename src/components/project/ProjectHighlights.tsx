@@ -1,10 +1,9 @@
+
 import {
-    CheckCircle2,
+CheckCircle2,
     MapPin,
     Ruler,
-    Calendar,
     Award,
-    TrendingUp,
 } from "lucide-react";
 
 const highlights = [
@@ -55,7 +54,7 @@ export default function ProjectHighlights() {
                                 <div
                                     key={item.title}
                                     className="text-center p-4 md:p-6 rounded-xl bg-gradient-to-br from-bg-light to-white border border-gray-200 hover:shadow-lg transition-all duration-300"
-                                    style={{ animationDelay: `${index * 100}ms` }}
+                                    style={{ animationDelay: `${ index * 100 } ms` }}
                                 >
                                     <div className="h-10 w-10 md:h-14 md:w-14 mx-auto mb-3 md:mb-4 rounded-full bg-project-gold/10 flex items-center justify-center">
                                         <Icon className="h-5 w-5 md:h-7 md:w-7 text-project-gold" />
@@ -81,17 +80,18 @@ export default function ProjectHighlights() {
                             <div
                                 key={item.phase}
                                 className="relative"
-                                style={{ animationDelay: `${index * 150}ms` }}
+                                style={{ animationDelay: `${ index * 150 } ms` }}
                             >
                                 <div className="flex items-center justify-between mb-2">
                                     <div className="flex items-center gap-3">
                                         <div
-                                            className={`h-3 w-3 rounded-full ${item.status === "completed"
-                                                ? "bg-green-500"
-                                                : item.status === "ongoing"
-                                                    ? "bg-project-gold animate-pulse"
-                                                    : "bg-gray-300"
-                                                }`}
+                                            className={`h - 3 w - 3 rounded - full ${
+    item.status === "completed"
+    ? "bg-green-500"
+    : item.status === "ongoing"
+        ? "bg-project-gold animate-pulse"
+        : "bg-gray-300"
+} `}
                                         />
                                         <span className="font-semibold text-corporate-blue">
                                             {item.phase}
@@ -105,13 +105,14 @@ export default function ProjectHighlights() {
                                 {/* Progress Bar */}
                                 <div className="ml-6 h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div
-                                        className={`h-full transition-all duration-1000 ${item.status === "completed"
-                                            ? "bg-green-500"
-                                            : item.status === "ongoing"
-                                                ? "bg-project-gold"
-                                                : "bg-gray-300"
-                                            }`}
-                                        style={{ width: `${item.progress}%` }}
+                                        className={`h - full transition - all duration - 1000 ${
+    item.status === "completed"
+    ? "bg-green-500"
+    : item.status === "ongoing"
+        ? "bg-project-gold"
+        : "bg-gray-300"
+} `}
+                                        style={{ width: `${ item.progress }% ` }}
                                     />
                                 </div>
                             </div>

@@ -37,7 +37,7 @@ export default function LeadCapture() {
                             </h2>
                             <p className="text-lg text-white/90 leading-relaxed mb-8">
                                 Get in touch with our expert team for a personalized
-                                consultation. We'll help you find the perfect plot that matches
+                                consultation. We&apos;ll help you find the perfect plot that matches
                                 your vision and budget.
                             </p>
                             <div className="space-y-4">

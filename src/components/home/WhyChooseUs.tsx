@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
                         <span className="text-project-gold">Deccan Veda Realty</span>
                     </h2>
                     <p className="text-lg text-white/80 leading-relaxed">
-                        We don't just sell plots; we build relationships and create
+                        We don&apos;t just sell plots; we build relationships and create
                         long-term value for our customers through integrity and excellence.
                     </p>
                 </div>

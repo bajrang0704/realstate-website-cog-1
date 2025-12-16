@@ -12,7 +12,7 @@ const testimonials = [
         location: "Heritage County",
         rating: 5,
         content:
-            "Deccan Veda Realty exceeded all expectations. The transparency in documentation and the quality of amenities are truly outstanding. Best investment decision I've made!",
+            "Deccan Veda Realty exceeded all expectations. The transparency in documentation and the quality of amenities are truly outstanding. Best investment decision I&apos;ve made!",
     },
     {
         id: 2,
@@ -58,7 +58,7 @@ export default function Testimonials() {
                         What Our <span className="text-gradient">Customers</span> Say
                     </h2>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                        Don't just take our word for it - hear from families who trusted us
+                        Don&apos;t just take our word for it - hear from families who trusted us
                         with their dreams.
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export default function Testimonials() {
                         {/* Content */}
                         <div className="text-center space-y-6">
                             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic">
-                                "{current.content}"
+                                &quot;{current.content}&quot;
                             </p>
 
                             <div className="pt-6 border-t border-gray-200">
